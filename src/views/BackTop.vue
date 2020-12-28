@@ -122,6 +122,9 @@ export default {
     computed: {},
     watch: {},
     methods: {
+      onClick() {
+        
+      }
     },
     created() {
 

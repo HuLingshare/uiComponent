@@ -68,7 +68,7 @@ class IdaUploader {
     if (!this.check(file)) return;
     let promArray = [];
     file.map(item => {
-      let temp = new Promise((resolve, reject) => {
+      let temp = new Promise((resolve) => {
         const reader = new FileReader();
         reader.readAsDataURL(item);
         reader.onload = e => {
@@ -102,7 +102,7 @@ class IdaUploader {
         },
         false
       );
-      xhr.onreadystatechange = e => {
+      xhr.onreadystatechange = () => {
         if (xhr.readyState === 4) {
           if (xhr.status === options.xhrState) {
             this.triggerFunc.call(options, options.onSuccess)(formData, xhr.responseText);

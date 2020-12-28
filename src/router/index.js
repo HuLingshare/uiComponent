@@ -54,6 +54,21 @@ const routes = [
     path: '/uploader',
     name: 'Uploader',
     component: () => import('../views/Uploader.vue')
+  },
+  {
+    path: '/drag',
+    name: 'Drag',
+    component: () => import('../views/Drag.vue')
+  },
+  {
+    path: '/noticebar',
+    name: 'Noticebar',
+    component: () => import('../views/Noticebar.vue')
+  },
+  {
+    path: '/elevator',
+    name: 'Elevator',
+    component: () => import('../views/Elevator.vue')
   }
 ]
 

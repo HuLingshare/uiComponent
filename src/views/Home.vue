@@ -15,6 +15,19 @@
       <router-link to="/backTop">BackTop<i class="icon iconfont icon-next"></i></router-link>
       <router-link to="/leftSlip">LeftSlip<i class="icon iconfont icon-next"></i></router-link>
       <router-link to="/uploader">Uploader<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/drag">Drag<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/noticebar">Noticebar<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/elevator">Elevator<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">下面的待完成<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">Switch<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">Slider<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">Radio<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">Checkbox<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">ShortPassword<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">Input<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">Swipter<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">Scroller<i class="icon iconfont icon-next"></i></router-link>
+      <router-link to="/home">CountDown<i class="icon iconfont icon-next"></i></router-link>
     </div>
   </div>
 </template>

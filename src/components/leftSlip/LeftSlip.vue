@@ -110,7 +110,7 @@ export default {
 
     touchMove(e) {
       if (this.disabled) return false;
-      let parentElement = e.currentTarget.parentElement;
+      // let parentElement = e.currentTarget.parentElement;
 
       let disX = e.touches[0].pageX - this.startX; // >0 右滑，<0 左滑
       let disY = e.touches[0].pageY - this.startY;
