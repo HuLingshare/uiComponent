@@ -1,0 +1,122 @@
+@keyframes nutEaseIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes nutEaseOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+@keyframes nutFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes nutFadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes nutSlideUpIn {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes nutSlideUpOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.make-animation(@timingFun: @animation-timing-fun, @duration: @animation-duration) {
+  .nutEase-enter-active,
+  .nutEaseIn,
+  .nutEase-leave-active,
+  .nutEaseOut {
+    animation-duration: @duration;
+    animation-fill-mode: both;
+    animation-timing-function: @timingFun;
+  }
+
+  .nutEase-enter-active,
+  .nutEaseIn {
+    animation-name: nutEaseIn;
+  }
+
+  .nutEase-leave-active,
+  .nutEaseOut {
+    animation-name: nutEaseOut;
+  }
+
+  .nutFade-enter-active,
+  .nutFadeIn,
+  .nutFade-leave-active,
+  .nutFadeOut {
+    animation-duration: @duration;
+    animation-fill-mode: both;
+    animation-timing-function: @timingFun;
+  }
+
+  .nutFade-enter-active,
+  .nutFadeIn {
+    animation-name: nutFadeIn;
+  }
+
+  .nutFade-leave-active,
+  .nutFadeOut {
+    animation-name: nutFadeOut;
+  }
+
+  .nutSlideUp-enter-active,
+  .nutSlideUpIn,
+  .nutSlideUp-leave-active,
+  .nutSlideUpOut {
+    animation-duration: @duration;
+    animation-fill-mode: both;
+    animation-timing-function: @timingFun;
+  }
+
+  .nutSlideUp-enter-active,
+  .nutSlideUpIn {
+    animation-name: nutSlideUpIn;
+  }
+
+  .nutSlideUp-leave-active,
+  .nutSlideUpOut {
+    animation-name: nutSlideUpOut;
+  }
+}
